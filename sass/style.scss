@@ -1,0 +1,126 @@
+@use './colors.scss' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	// font-family: "Poppins", sans-serif;
+	background-image: url(../img/bg-mobile.svg);
+	background-color: $violet;
+	height: 100vh;
+	background-size: cover;
+	// background-position: center;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1200px;
+}
+.hero {
+	width: 100%;
+}
+
+.header {
+	&__img {
+		width: 45%;
+		padding: 1.5em 0;
+	}
+}
+
+.main {
+	.content-box {
+		.box-two {
+			text-align: center;
+			&__title {
+				margin-top: 2em;
+				font-size: 2.6rem;
+				font-family: 'Open Sans', sans-serif;
+				color: #fff;
+			}
+			&__text {
+				padding: 1em 0;
+				font-size: 1.8rem;
+				font-family: 'Open Sans', sans-serif;
+				color: #fff;
+			}
+			&__button {
+				display: inline-block;
+				margin-top: 1em;
+				padding: 1em 6em;
+				background-color: #fff;
+				border-radius: 50px;
+				font-size: 1.4rem;
+				text-decoration: none;
+				color: $violet;
+			}
+		}
+	}
+}
+.footer {
+	padding: 2em 0;
+	text-align: center;
+	margin-top: 5em;
+	font-size: 2rem;
+	.link {
+		margin-left: 1em;
+		border: 1px solid white;
+		padding: 0.3em 0.5em;
+		border-radius: 100%;
+		color: #fff;
+	}
+	.fb {
+		padding: 0.3em 0.65em;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		background-image: url(../img/bg-desktop.svg);
+	}
+	.header {
+		&__img {
+			width: 20%;
+		}
+	}
+	.main {
+		margin-top: 5em;
+		.content-box {
+			display: flex;
+			gap: 60px;
+
+			.box-two {
+				width: 40%;
+				text-align: left;
+				&__button {
+					&:hover {
+						color: #fff;
+						background-color: $soft-magneta;
+						transition: color, background-color 0.15s;
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-right: 2em;
+		.link {
+			margin-left: 0.5em;
+		}
+		.link:hover {
+			color: $soft-magneta;
+			border: 1px solid $soft-magneta;
+			transition: color, border 0.15s;
+		}
+	}
+}

@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../img/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  height: 100vh;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.header__img {
+  width: 45%;
+  padding: 1.5em 0;
+}
+
+.main .content-box .box-two {
+  text-align: center;
+}
+.main .content-box .box-two__title {
+  margin-top: 2em;
+  font-size: 2.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.main .content-box .box-two__text {
+  padding: 1em 0;
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.main .content-box .box-two__button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1em 6em;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+}
+
+.footer {
+  padding: 2em 0;
+  text-align: center;
+  margin-top: 5em;
+  font-size: 2rem;
+}
+.footer .link {
+  margin-left: 1em;
+  border: 1px solid white;
+  padding: 0.3em 0.5em;
+  border-radius: 100%;
+  color: #fff;
+}
+.footer .fb {
+  padding: 0.3em 0.65em;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../img/bg-desktop.svg);
+  }
+  .header__img {
+    width: 20%;
+  }
+  .main {
+    margin-top: 5em;
+  }
+  .main .content-box {
+    display: flex;
+    gap: 60px;
+  }
+  .main .content-box .box-two {
+    width: 40%;
+    text-align: left;
+  }
+  .main .content-box .box-two__button:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+    transition: color, background-color 0.15s;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2em;
+  }
+  .footer .link {
+    margin-left: 0.5em;
+  }
+  .footer .link:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    transition: color, border 0.15s;
+  }
+}/*# sourceMappingURL=style.css.map */
